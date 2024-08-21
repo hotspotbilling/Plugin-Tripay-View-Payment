@@ -1,4 +1,4 @@
-{include file="sections/user-header.tpl"}
+{include file="user-ui/header.tpl"}
 <!-- user-pages -->
 
 <div class="row">
@@ -31,11 +31,11 @@
             <div class="panel-footer">
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="{$_url}order/view/{$trxid}/check" class="btn btn-success btn-block">sudah bayar? Cek
-                            Pembayaran</a>
+                        <a href="{$_url}order/view/{$trxid}/check" class="btn btn-success btn-block">{Lang::T('Have you paid? Check
+Payment')}</a>
                     </div>
                     <div class="col-md-6">
-                        <a href="{$checkout_url}" class="btn btn-info btn-block">Lihat Halaman Pembayaran</a>
+                        <a href="{$checkout_url}" class="btn btn-info btn-block">{Lang::T('View Payment Page')}</a>
                     </div>
                 </div>
             </div>
@@ -43,4 +43,4 @@
     </div>
 </div>
 
-{include file="sections/user-footer.tpl"}
+{include file="user-ui/footer.tpl"}
